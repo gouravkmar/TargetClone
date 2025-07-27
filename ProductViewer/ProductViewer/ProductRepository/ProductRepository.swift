@@ -49,7 +49,7 @@ class ProductRepository : ProductRepositoryProtocol {
             .setHost(TargetAPIConfig.host)
             .setMethod(.get)
             .setPath(TargetAPIConfig.Path.basePath)
-            .appendPathComponent(String(product.id)) // check if this is correct 
+            .appendPathComponent(String(product.id))
             .build()
         
         let (data,_) = try await NetworkManager.shared.makeAPIRequest(networkRequest: networkRequest)

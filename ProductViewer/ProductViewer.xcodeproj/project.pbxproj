@@ -106,6 +106,7 @@
 		5B259CC81D6630E0001D755F /* ProductViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5FF5C1072E36390F00D709EF /* Coordinators */,
 				5F21A97C2E342DCA0074F782 /* Models */,
 				5F21A9802E342DCA0074F782 /* Networking */,
 				5F21A9822E342DCA0074F782 /* ProductRepository */,
@@ -163,9 +164,16 @@
 				5BEF08131D663304006BF0C0 /* ListViewController.swift */,
 				5F21A9862E342DCA0074F782 /* ProductDetailViewController.swift */,
 				5F21A9BF2E34CE0B0074F782 /* ProductListCollectionViewCell.swift */,
-				5F21A9C62E34EAF10074F782 /* ProductCoordinator.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5FF5C1072E36390F00D709EF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5F21A9C62E34EAF10074F782 /* ProductCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		9636D41827FF77E700FE8106 /* ProductViewerTests */ = {
