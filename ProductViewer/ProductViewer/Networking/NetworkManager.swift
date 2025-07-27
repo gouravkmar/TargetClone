@@ -71,7 +71,6 @@ class NetworkManager {
         let fullURL = networkRequest.pathComponents.reduce(url) { partialURL, component in
             partialURL.appendingPathComponent(component)
         }
-//        fullURL    Foundation.URL    "https://api.target.com/mobile_case_study_deals/v1?"    
         var request = URLRequest(url: fullURL, timeoutInterval: TimeInterval(networkRequest.timoutInterval))
         
         request.httpMethod = networkRequest.requestType.rawValue

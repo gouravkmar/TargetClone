@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
+        productCoordinator?.start()
         return true
     }
 

@@ -7,8 +7,6 @@
 
 import Foundation
 
-//https://api.target.com/mobile_case_study_deals/v1
-//https://api.target.com/mobile_case_study_deals/v1/deals
 enum TargetAPIConfig {
     static let host = "api.target.com"
     static let scheme = "https"

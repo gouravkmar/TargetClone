@@ -21,6 +21,8 @@ final class ProductCoordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+    }
+    func start(){
         showHomePage()
     }
     
@@ -36,10 +38,6 @@ extension ProductCoordinator : ProductCoordinatorProtocol {
     func didSelectProduct(product: Product) {
         let viewModel = ProductDetailViewModel(productRepository: repository, product: product)
         let detailPage = ProductDetailViewController(viewModel: viewModel)
-//        let backImage = UIImage(systemName: "chevron.left")?.withTintColor(.targetRed)
-//        navigationController.navigationBar.backIndicatorImage = backImage
-//        navigationController.navigationBar.backIndicatorTransitionMaskImage = backImage
-//        navigationController.navigationItem.backButtonTitle = ""
         navigationController.pushViewController(detailPage, animated: true)
     }
 }

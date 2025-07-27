@@ -28,7 +28,7 @@ class ProductDetailViewModel {
                 var productDetail = try await self.productRepository.getProductDetails(product: product)
                 if productDetail.salePrice == nil {
                     productDetail.salePrice = productDetail.regularPrice
-                }// defaulting to regular price in case the sale price is missing in the API response as i have witnessed
+                }// defaulting to regular price in case the sale price is missing in the API response
                 self.productDetail = productDetail
                 await MainActor.run{
                     onDataChange?()
