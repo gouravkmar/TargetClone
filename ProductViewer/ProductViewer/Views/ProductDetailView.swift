@@ -106,7 +106,7 @@ class ProductDetailView: UIView {
         stack.axis = .vertical
         stack.spacing = 20
         stack.prepareForAutolayout()
-        stack.backgroundColor = .background
+        stack.backgroundColor = .systemBackground
         stack.isLayoutMarginsRelativeArrangement = true
         stack.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         return stack
@@ -119,7 +119,7 @@ class ProductDetailView: UIView {
         stack.axis = .vertical
         stack.spacing = 30
         stack.prepareForAutolayout()
-        stack.backgroundColor = .background
+        stack.backgroundColor = .systemBackground
         stack.isLayoutMarginsRelativeArrangement = true
         stack.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         return stack
@@ -139,10 +139,11 @@ class ProductDetailView: UIView {
         let scrollView = UIScrollView()
         scrollView.prepareForAutolayout()
         scrollView.addSubview(containerStackView)
-        scrollView.backgroundColor = .grayMedium
+        scrollView.backgroundColor = .background
         scrollView.bounces = false
         scrollView.alwaysBounceVertical = false
         scrollView.contentInsetAdjustmentBehavior = .never
+        scrollView.showsVerticalScrollIndicator = false
         return scrollView
     }()
 
